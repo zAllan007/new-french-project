@@ -5,15 +5,547 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Allan Dantas Abreu">
-    <link rel="stylesheet" href="/src/styles/turismo.css">
+    <link rel="stylesheet" href="../styles/turismo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/src/styles/turismo.css">
-    <title>Descubra a França - Turismo</title>
+    <title>Descubra a França - Turismo e Matemática Financeira</title>
 </head>
 
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <span class="logo-text">
+                <img src="../assets/images/France-map.webp" alt="Bandeira da França" class="logo-img">
+                <span class="french-blue-h1">Fr</span><span class="french-white-h1">an</span><span
+                    class="french-red-h1">ça</span>
+            </span>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="/France - Project/index.html">Início</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="geografia.html">Geografia</a></li>
+                    <li><a href="cultura.html">Cultura</a></li>
+                    <li><a href="turismo.html" class="active">Turismo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Tabs -->
+    <div class="tabs-bar">
+        <button class="tab-btn active" data-tab="turismo"> Turismo</button>
+        <button class="tab-btn" data-tab="matematica"> Matemática Financeira</button>
+        <button class="tab-btn" data-tab="custos"> Custos</button>
+        <button class="tab-btn" data-tab="exemplos"> Exemplos Práticos</button>
+    </div>
+
+    <!-- Tab: Turismo -->
+    <section class="section-turismo tab-content active" id="tab-turismo">
+
+        <div class="turismo-intro">
+            <h2>Turismo na <span class="french-blue-h1">Fr</span><span class="french-white-h1">an</span><span class="french-red-h1">ça</span></h2>
+            <p>A França é o destino turístico mais visitado do mundo, recebendo milhões de visitantes anualmente. Com sua rica história, cultura vibrante, gastronomia excepcional e monumentos icônicos, o país oferece experiências únicas para todos os tipos de viajantes.</p>
+            <div class="turismo-image-wrap">
+                <img src="https://imgs.search.brave.com/1WRu57rheCFtX-aoTr_dNusCc7lSx0jogbcK6P5rUYM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE2/MjQ1NDM4NS9wdC9m/b3RvL3BhcmlzLWZy/YW5jZS10b3VyaXN0/cy1wb3NlLWZvci1h/LXBob3RvLW5lYXIt/ZWlmZmVsLXRvd2Vy/LW9uLWp1bHktMTct/MjAyNC1pbi1wYXJp/cy1mcmFuY2UuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUx6/YlNDRFExVlpmbU9h/dFN5b3ViS19yNXVI/UkhoSUU0RU83bG5X/VDI0VFU9" alt="Torre Eiffel" loading="lazy">
+            </div>
+        </div>
+
+        <div class="turismo-paris">
+            <div class="turismo-card-content">
+                <div class="turismo-text">
+                    <h3>Paris - A Cidade Luz</h3>
+                    <p>Capital da França, Paris é famosa pela Torre Eiffel, Museu do Louvre, Catedral de Notre-Dame e Arco do Triunfo. A cidade oferece uma combinação perfeita de arte, história, moda e gastronomia refinada.</p>
+                </div>
+                <img src="https://imgs.search.brave.com/sxLx_1N8U5WqJd_Iudv_P7LAVI79tdOAaUVqB38L6Yk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU2/NzU3MTA4MC9waG90/by9hLXBhcmlzLWNh/ZmUtYW5kLXN0cmVl/dHMtYXQtZHVzay5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/UEgwLUYyRmZ4MXRi/RlVwZVNGb1RIR2s1/VmFtVG00amVTTkps/aVZWUEJVVT0" alt="Paris" loading="lazy">
+            </div>
+        </div>
+
+        <div class="turismo-provence">
+            <div class="turismo-card-content reverse">
+                <div class="turismo-text">
+                    <h3>Provence</h3>
+                    <p>Região sul da França conhecida por seus campos de lavanda, vilas medievais e clima mediterrâneo. Ideal para quem busca tranquilidade, paisagens deslumbrantes e vinhos renomados.</p>
+                </div>
+                <img src="https://imgs.search.brave.com/kGshGSVDBYoggghQHJkBfiX2W-0_zA5GFmrFJtz2osQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJhbmNlZ3VpZGUu/aW5mby93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvMTgvbGFn/YXJkZS1hcHRfc3Mu/anBn" alt="Provence" loading="lazy">
+            </div>
+        </div>
+
+        <div class="turismo-riviera">
+            <div class="turismo-card-content">
+                <div class="turismo-text">
+                    <h3>Costa Azul</h3>
+                    <p>A Riviera Francesa é famosa por suas praias glamourosas, casinos de luxo e cidades como Nice e Cannes. Destino preferido da elite europeia desde o século XIX.</p>
+                </div>
+                <img src="https://imgs.search.brave.com/bw3lynqlk8dDal-sZpxY2k_xAQf2Qh-Eyd1xWhSehts/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dC1wcm9kLmZyYW5j/ZS5mci9EZXNpZ25f/c2Fuc190aXRyZV84/M185YWNiZGExMzA2/LnBuZw" alt="Costa Azul" loading="lazy">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Tab: Matemática Financeira -->
+    <section class="section-matematica tab-content" id="tab-matematica">
+
+        <div class="matematica-intro">
+            <h2>Matemática no <span class="french-blue-h1">Tu</span><span class="french-white-h1">ris</span><span class="french-red-h1">mo</span></h2>
+            <p>A matemática é fundamental para o planejamento financeiro de viagens internacionais. Vamos explorar como conceitos matemáticos do ensino médio podem ajudar a calcular custos, fazer conversões e otimizar o orçamento.</p>
+        </div>
+
+        <div class="matematica-conceitos">
+            <div class="conceito-card">
+                <div class="conceito-icon">📊</div>
+                <h3>Conversão de Moedas</h3>
+                <p>Para converter Reais (R$) para Euros (€), usamos a taxa de câmbio atual. Se 1€ = R$5,50, então:</p>
+                <div class="formula-box">
+                    <p><strong>Fórmula:</strong> Valor em € = Valor em R$ ÷ Taxa de câmbio</p>
+                    <p><strong>Exemplo:</strong> R$550 ÷ 5,50 = €100</p>
+                </div>
+            </div>
+
+            <div class="conceito-card">
+                <div class="conceito-icon">📈</div>
+                <h3>Porcentagem</h3>
+                <p>Essencial para calcular descontos, impostos e gorjetas. Em restaurantes franceses, a gorjeta geralmente é de 10%:</p>
+                <div class="formula-box">
+                    <p><strong>Fórmula:</strong> Valor × Porcentagem ÷ 100</p>
+                    <p><strong>Exemplo:</strong> €50 × 10 ÷ 100 = €5 de gorjeta</p>
+                </div>
+            </div>
+
+            <div class="conceito-card">
+                <div class="conceito-icon">💰</div>
+                <h3>Juros Simples</h3>
+                <p>Usado para calcular rendimentos em poupança para viagem:</p>
+                <div class="formula-box">
+                    <p><strong>Fórmula:</strong> J = C × i × t</p>
+                    <p><strong>Onde:</strong> J = Juros, C = Capital, i = Taxa, t = Tempo</p>
+                    <p><strong>Exemplo:</strong> R$1000 × 0,01 × 12 = R$120 de juros</p>
+                </div>
+            </div>
+
+            <div class="conceito-card">
+                <div class="conceito-icon">📉</div>
+                <h3>Juros Compostos</h3>
+                <p>Para investimentos que rendem sobre rendimentos:</p>
+                <div class="formula-box">
+                    <p><strong>Fórmula:</strong> M = C × (1 + i)^t</p>
+                    <p><strong>Onde:</strong> M = Montante, C = Capital, i = Taxa, t = Tempo</p>
+                    <p><strong>Exemplo:</strong> R$1000 × (1,01)^12 ≈ R$1.126,83</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="funcoes-matematicas">
+            <h3>Funções Matemáticas no Turismo</h3>
+            
+            <div class="funcao-card">
+                <h4>Função Afim</h4>
+                <p>Modela gastos que crescem linearmente com o tempo:</p>
+                <div class="formula-box">
+                    <p><strong>Fórmula:</strong> f(x) = ax + b</p>
+                    <p><strong>Exemplo:</strong> Custo diário = €80 × dias + €200 (fixo)</p>
+                    <p><strong>Para 7 dias:</strong> f(7) = 80×7 + 200 = €760</p>
+                </div>
+            </div>
+
+            <div class="funcao-card">
+                <h4>Função Quadrática</h4>
+                <p>Modela custos com taxas que aumentam progressivamente:</p>
+                <div class="formula-box">
+                    <p><strong>Fórmula:</strong> f(x) = ax² + bx + c</p>
+                    <p><strong>Exemplo:</strong> Custo = 2x² + 50x + 100</p>
+                    <p><strong>Para 5 dias:</strong> f(5) = 2×25 + 50×5 + 100 = €400</p>
+                </div>
+            </div>
+
+            <div class="funcao-card">
+                <h4>Regra de Três</h3>
+                <p>Para converter valores e calcular proporções:</p>
+                <div class="formula-box">
+                    <p><strong>Exemplo:</strong> Se €100 equivalem a R$550, quanto valem €250?</p>
+                    <p><strong>Cálculo:</strong> 250 × 550 ÷ 100 = R$1.375</p>
+                </div>
+            </div>
+
+            <div class="funcao-card">
+                <h4>Estatística</h4>
+                <p>Análise de dados de gastos médios:</p>
+                <div class="formula-box">
+                    <p><strong>Média:</strong> Soma dos valores ÷ Quantidade</p>
+                    <p><strong>Mediana:</strong> Valor central do conjunto ordenado</p>
+                    <p><strong>Moda:</strong> Valor mais frequente</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Tab: Custos -->
+    <section class="section-custos tab-content" id="tab-custos">
+
+        <div class="custos-intro">
+            <h2>Estimativa de <span class="french-blue-h1">Cu</span><span class="french-white-h1">st</span><span class="french-red-h1">os</span></h2>
+            <p>Planejamento financeiro detalhado para uma viagem do Brasil à França, considerando todos os aspectos importantes.</p>
+        </div>
+
+        <div class="custos-tabela-container">
+            <h3>Custos Estimados - Viagem Brasil → França</h3>
+            <table class="custos-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Valor (€)</th>
+                        <th>Valor (R$)*</th>
+                        <th>Observações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Passagem Aérea</td>
+                        <td>€800</td>
+                        <td>R$4.400</td>
+                        <td>Ida e volta, classe econômica</td>
+                    </tr>
+                    <tr>
+                        <td>Hospedagem (média)</td>
+                        <td>€90/dia</td>
+                        <td>R$495/dia</td>
+                        <td>Hotel 3 estrelas</td>
+                    </tr>
+                    <tr>
+                        <td>Alimentação</td>
+                        <td>€50/dia</td>
+                        <td>R$275/dia</td>
+                        <td>Restaurante + supermercado</td>
+                    </tr>
+                    <tr>
+                        <td>Transporte local</td>
+                        <td>€15/dia</td>
+                        <td>R$82,50/dia</td>
+                        <td>Metro + ônibus</td>
+                    </tr>
+                    <tr>
+                        <td>Ingressos turísticos</td>
+                        <td>€150</td>
+                        <td>R$825</td>
+                        <td>Principais atrações</td>
+                    </tr>
+                    <tr>
+                        <td>Seguro viagem</td>
+                        <td>€80</td>
+                        <td>R$440</td>
+                        <td>Cobertura completa</td>
+                    </tr>
+                    <tr>
+                        <td>Gastos extras</td>
+                        <td>€200</td>
+                        <td>R$1.100</td>
+                        <td>Compras, imprevistos</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td><strong>TOTAL (7 dias)</strong></td>
+                        <td><strong>€1.525</strong></td>
+                        <td><strong>R$8.387,50</strong></td>
+                        <td><strong>*Câmbio: €1 = R$5,50</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="custos-dias-container">
+            <h3>Custo por Período de Estadia</h3>
+            <table class="custos-table">
+                <thead>
+                    <tr>
+                        <th>Dias</th>
+                        <th>Hospedagem</th>
+                        <th>Alimentação</th>
+                        <th>Transporte</th>
+                        <th>Outros</th>
+                        <th>Total (€)</th>
+                        <th>Total (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5 dias</td>
+                        <td>€450</td>
+                        <td>€250</td>
+                        <td>€75</td>
+                        <td>€430</td>
+                        <td>€1.205</td>
+                        <td>R$6.627,50</td>
+                    </tr>
+                    <tr>
+                        <td>7 dias</td>
+                        <td>€630</td>
+                        <td>€350</td>
+                        <td>€105</td>
+                        <td>€430</td>
+                        <td>€1.515</td>
+                        <td>R$8.332,50</td>
+                    </tr>
+                    <tr>
+                        <td>10 dias</td>
+                        <td>€900</td>
+                        <td>€500</td>
+                        <td>€150</td>
+                        <td>€430</td>
+                        <td>€1.980</td>
+                        <td>R$10.890,00</td>
+                    </tr>
+                    <tr>
+                        <td>15 dias</td>
+                        <td>€1.350</td>
+                        <td>€750</td>
+                        <td>€225</td>
+                        <td>€430</td>
+                        <td>€2.755</td>
+                        <td>R$15.152,50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pontos-turisticos-container">
+            <h3>Principais Pontos Turísticos - Valores Aproximados</h3>
+            <table class="custos-table">
+                <thead>
+                    <tr>
+                        <th>Atração</th>
+                        <th>Valor Adulto</th>
+                        <th>Valor Estudante</th>
+                        <th>Duração Média</th>
+                        <th>Melhor Período</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Torre Eiffel</td>
+                        <td>€26,80</td>
+                        <td>€13,40</td>
+                        <td>2-3 horas</td>
+                        <td>Pôr do sol</td>
+                    </tr>
+                    <tr>
+                        <td>Museu do Louvre</td>
+                        <td>€17,00</td>
+                        <td>Gratuito</td>
+                        <td>3-4 horas</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr>
+                        <td>Arco do Triunfo</td>
+                        <td>€13,00</td>
+                        <td>Gratuito</td>
+                        <td>1 hora</td>
+                        <td>Noite</td>
+                    </tr>
+                    <tr>
+                        <td>Catedral de Notre-Dame</td>
+                        <td>Gratuito</td>
+                        <td>Gratuito</td>
+                        <td>1-2 horas</td>
+                        <td>Qualquer</td>
+                    </tr>
+                    <tr>
+                        <td>Palácio de Versalhes</td>
+                        <td>€19,50</td>
+                        <td>Gratuito</td>
+                        <td>4-5 horas</td>
+                        <td>Manhã</td>
+                    </tr>
+                    <tr>
+                        <td>Disneyland Paris</td>
+                        <td>€89,00</td>
+                        <td>€79,00</td>
+                        <td>Dia inteiro</td>
+                        <td>Semana</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="grafico-container">
+            <h3>Distribuição de Gastos (7 dias)</h3>
+            <div class="grafico-barra">
+                <div class="barra-item">
+                    <div class="barra-label">Passagem</div>
+                    <div class="barra-visual" style="width: 52.5%; background: var(--color-french-blue);">
+                        <span>52.5%</span>
+                    </div>
+                </div>
+                <div class="barra-item">
+                    <div class="barra-label">Hospedagem</div>
+                    <div class="barra-visual" style="width: 41.4%; background: var(--color-french-red);">
+                        <span>41.4%</span>
+                    </div>
+                </div>
+                <div class="barra-item">
+                    <div class="barra-label">Alimentação</div>
+                    <div class="barra-visual" style="width: 23.0%; background: var(--color-french-white);">
+                        <span>23.0%</span>
+                    </div>
+                </div>
+                <div class="barra-item">
+                    <div class="barra-label">Transporte</div>
+                    <div class="barra-visual" style="width: 6.9%; background: var(--color-gray-2);">
+                        <span>6.9%</span>
+                    </div>
+                </div>
+                <div class="barra-item">
+                    <div class="barra-label">Outros</div>
+                    <div class="barra-visual" style="width: 30.3%; background: var(--color-baby-blue);">
+                        <span>30.3%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Tab: Exemplos Práticos -->
+    <section class="section-exemplos tab-content" id="tab-exemplos">
+
+        <div class="exemplos-intro">
+            <h2>Exemplos <span class="french-blue-h1">Prá</span><span class="french-white-h1">ti</span><span class="french-red-h1">cos</span></h2>
+            <p>Problemas resolvidos demonstrando como a matemática auxilia no planejamento de viagens.</p>
+        </div>
+
+        <div class="exemplo-card">
+            <h3>Exemplo 1: Função Afim - Custo Diário</h3>
+            <div class="exemplo-problema">
+                <p><strong>Problema:</strong> Um hotel cobra €80 por diária mais uma taxa fixa de €200 de limpeza. Qual o custo para 7 dias?</p>
+            </div>
+            <div class="exemplo-solucao">
+                <p><strong>Solução:</strong></p>
+                <p>Função afim: f(x) = 80x + 200</p>
+                <p>Para x = 7 dias:</p>
+                <p>f(7) = 80×7 + 200</p>
+                <p>f(7) = 560 + 200</p>
+                <p><strong>f(7) = €760</strong></p>
+            </div>
+        </div>
+
+        <div class="exemplo-card">
+            <h3>Exemplo 2: Juros Compostos - Poupança para Viagem</h3>
+            <div class="exemplo-problema">
+                <p><strong>Problema:</strong> Você tem R$5.000 para investir a uma taxa de 1% ao mês. Quanto terá após 12 meses?</p>
+            </div>
+            <div class="exemplo-solucao">
+                <p><strong>Solução:</strong></p>
+                <p>Fórmula: M = C × (1 + i)^t</p>
+                <p>M = 5000 × (1 + 0,01)^12</p>
+                <p>M = 5000 × (1,01)^12</p>
+                <p>M = 5000 × 1,1268</p>
+                <p><strong>M ≈ R$5.634,00</strong></p>
+                <p><em>Lucro: R$634,00</em></p>
+            </div>
+        </div>
+
+        <div class="exemplo-card">
+            <h3>Exemplo 3: Regra de Três - Conversão de Moeda</h3>
+            <div class="exemplo-problema">
+                <p><strong>Problema:</strong> Se €100 equivalem a R$550, quanto custam €350 em reais?</p>
+            </div>
+            <div class="exemplo-solucao">
+                <p><strong>Solução:</strong></p>
+                <p>€100 → R$550</p>
+                <p>€350 → X</p>
+                <p>X = 350 × 550 ÷ 100</p>
+                <p>X = 192.500 ÷ 100</p>
+                <p><strong>X = R$1.925,00</strong></p>
+            </div>
+        </div>
+
+        <div class="exemplo-card">
+            <h3>Exemplo 4: Função Quadrática - Custo com Taxa Progressiva</h3>
+            <div class="exemplo-problema">
+                <p><strong>Problema:</strong> Um serviço de turismo cobra €2 por dia² + €50 por dia + €100 fixo. Qual o custo para 5 dias?</p>
+            </div>
+            <div class="exemplo-solucao">
+                <p><strong>Solução:</strong></p>
+                <p>Função quadrática: f(x) = 2x² + 50x + 100</p>
+                <p>Para x = 5 dias:</p>
+                <p>f(5) = 2×5² + 50×5 + 100</p>
+                <p>f(5) = 2×25 + 250 + 100</p>
+                <p>f(5) = 50 + 250 + 100</p>
+                <p><strong>f(5) = €400</strong></p>
+            </div>
+        </div>
+
+        <div class="exemplo-card">
+            <h3>Exemplo 5: Porcentagem - Desconto em Pacote</h3>
+            <div class="exemplo-problema">
+                <p><strong>Problema:</strong> Um pacote de viagem custa €2.000. Com desconto de 15%, qual o valor final?</p>
+            </div>
+            <div class="exemplo-solucao">
+                <p><strong>Solução:</strong></p>
+                <p>Valor do desconto: 2000 × 15 ÷ 100 = €300</p>
+                <p>Valor final: 2000 - 300</p>
+                <p><strong>Valor final = €1.700</strong></p>
+            </div>
+        </div>
+
+        <div class="exemplo-card">
+            <h3>Exemplo 6: Estatística - Análise de Gastos</h3>
+            <div class="exemplo-problema">
+                <p><strong>Problema:</strong> Gastos diários: €45, €52, €38, €60, €48. Calcule média, mediana e moda.</p>
+            </div>
+            <div class="exemplo-solucao">
+                <p><strong>Solução:</strong></p>
+                <p><strong>Média:</strong> (45 + 52 + 38 + 60 + 48) ÷ 5 = 243 ÷ 5 = <strong>€48,60</strong></p>
+                <p><strong>Mediana:</strong> Ordenado: 38, 45, 48, 52, 60 → <strong>€48</strong></p>
+                <p><strong>Moda:</strong> Não há valor repetido → <strong>Não existe</strong></p>
+            </div>
+        </div>
+
+        <div class="calculadora-section">
+            <h3>Calculadora de Viagem</h3>
+            <div class="calculadora-form">
+                <div class="form-group">
+                    <label for="dias">Número de dias:</label>
+                    <input type="number" id="dias" min="1" max="30" value="7">
+                </div>
+                <div class="form-group">
+                    <label for="pessoas">Número de pessoas:</label>
+                    <input type="number" id="pessoas" min="1" max="10" value="2">
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoria de hotel:</label>
+                    <select id="categoria">
+                        <option value="70">Econômico (€70/dia)</option>
+                        <option value="90" selected>Médio (€90/dia)</option>
+                        <option value="150">Luxo (€150/dia)</option>
+                    </select>
+                </div>
+                <button id="calcular-btn" class="calcular-btn">Calcular Custo</button>
+            </div>
+            <div class="resultado-container" id="resultado">
+                <p>Clique em "Calcular Custo" para ver o resultado</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>1º Ano B - <span class="french-blue-h1">Gin</span><span class="french-white-h1">Wo</span><span class="french-red-h1">rld</span></h3>
+    </footer>
+
+    <script src="../js/turismo.js"></script>
+
+</body>
 
 </html>
