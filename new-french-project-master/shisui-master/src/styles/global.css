@@ -1,0 +1,43 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root{
+    
+/* Colors */
+--color-french-blue: #0055A4;
+--color-baby-blue: #65b2ff;
+--color-french-white: #FFFFFF;
+--color-french-red: #EF4135;
+--color-baby-red: #ff6565;
+--color-black: #000000;
+--color-gray: #5C5C5C;
+--color-gray-2: #969696;
+--color-gray-3: #C4C4C4;
+
+/* Fonts */
+
+/* Size */
+--font-size-h1: 35px;
+--font-size-h2: 30px;
+--font-size-h3: 25px;
+--font-size-h4: 18px;
+--font-size-body: 16px;
+--font-size-button: 16px;
+--font-size-caption:14px;
+
+/* Font-Weight */
+--font-weigth-h1: 600;
+--font-weigth-h2: 600;
+--font-weigth-h3: 600;
+--font-weigth-h4: 500;
+--font-weigth-body: 400;
+--font-weigth-button: 700;
+--font-weigth-caption: 400;
+
+/* Font-Family */
+--font-family-primary: "Poppins", sans-serif;
+}
