@@ -72,8 +72,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **CSS**
 -   **JS**
 
-#### **Prototipação** ([Figma](https://www.figma.com/))
-
 ---
 
 <!-- ---------------------------------------------------------------------- -->
@@ -92,9 +90,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE AUTOR-->
-## 🦸 Autor
+## 🦸 Autores
 
 Allan Dantas Abreu</a>
+ <br />
+
+Brian Gomes Marques </a>
+ <br />
+
+ Cauã Gomes Madeira</a>
  <br />
  
 [![Gmail Badge](https://img.shields.io/badge/-abreuallandantas@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:abreuallandantas@gmail.com)](mailto:abreuallandantas@gmail.com)
