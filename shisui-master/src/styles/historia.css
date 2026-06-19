@@ -1,0 +1,289 @@
+@import url(./global.css);
+
+/* ─── Header ─────────────────────────────────────────── */
+
+header {
+    background-color: var(--color-black);
+    color: var(--color-french-white);
+    font-family: var(--font-family-primary);
+    padding: 20px 55px;
+    border-bottom: 2px solid var(--color-french-red);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo-text {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weigth-h2);
+    letter-spacing: 2px;
+}
+
+.french-blue-h1  { color: var(--color-french-blue); }
+.french-white-h1 { color: var(--color-french-white); }
+.french-red-h1   { color: var(--color-french-red); }
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weigth-h2);
+    letter-spacing: 2px;
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Nav */
+
+.nav-menu { display: flex; }
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-french-white);
+    font-size: var(--font-size-body);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weigth-h4);
+    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 2px;
+    background: var(--color-french-red);
+    transition: width 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active { color: var(--color-french-red); }
+
+.nav-links a:hover::after,
+.nav-links a.active::after { width: 100%; }
+
+/* ─── Hamburger ──────────────────────────────────────── */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    z-index: 200;
+}
+
+.hamburger span {
+    display: block;
+    width: 26px; height: 2px;
+    background-color: var(--color-french-white);
+    border-radius: 2px;
+    transition: transform 0.35s, opacity 0.35s;
+}
+
+.hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ─── Tabs bar ───────────────────────────────────────── */
+
+.tabs-bar {
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family-primary);
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: var(--color-gray-2);
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weigth-h4);
+    padding: 16px 40px;
+    cursor: pointer;
+    transition: color 0.3s;
+    border-bottom: 3px solid transparent;
+    letter-spacing: 0.5px;
+}
+
+.tab-btn:hover { color: var(--color-french-white); }
+
+.tab-btn.active {
+    color: var(--color-french-white);
+    border-bottom: 3px solid var(--color-french-red);
+}
+
+/* ─── Tab toggle ─────────────────────────────────────── */
+
+.tab-content { display: none; }
+.tab-content.active { display: flex; }
+
+/* ─── Section History ─────────────────────────────────── */
+
+.section-history {
+    background-color: var(--color-black);
+    color: var(--color-french-white);
+    font-family: var(--font-family-primary);
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 20px;
+}
+
+.history-intro {
+    width: 100%; max-width: 850px;
+    text-align: center;
+    display: flex; flex-direction: column;
+    align-items: center; gap: 20px;
+}
+
+.history-intro h2 { font-size: var(--font-size-h2); font-weight: var(--font-weigth-h2); }
+.history-intro p  { font-size: var(--font-size-body); line-height: 1.8; color: var(--color-gray-3); }
+
+.history-image-wrap { margin-top: 20px; width: 100%; max-width: 480px; }
+.history-image-wrap img { width: 100%; border-radius: 12px; opacity: 0.85; }
+
+.history-ancient,
+.history-medieval,
+.history-modern,
+.history-contemporary {
+    width: 100%; max-width: 850px;
+    background-color: rgba(255,255,255,0.03);
+    padding: 30px; border-radius: 15px;
+    border-left: 5px solid var(--color-french-blue);
+}
+
+.history-card-content { display: flex; align-items: center; gap: 30px; }
+.history-card-content.reverse { flex-direction: row-reverse; }
+
+.history-text { flex: 1; text-align: left; }
+.history-text h3 { font-size: var(--font-size-h3); font-weight: var(--font-weigth-h3); color: var(--color-french-red); margin-bottom: 12px; }
+.history-text p  { font-size: var(--font-size-body); line-height: 1.8; color: var(--color-gray-3); text-align: justify; }
+
+.history-ancient img,
+.history-medieval img,
+.history-modern img,
+.history-contemporary img {
+    width: 260px; height: 200px;
+    object-fit: cover; border-radius: 12px;
+    flex-shrink: 0; opacity: 0.9;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.history-ancient img:hover,
+.history-medieval img:hover,
+.history-modern img:hover,
+.history-contemporary img:hover { opacity: 1; transform: scale(1.03); }
+
+.history-conclusion {
+    max-width: 850px; text-align: center;
+    font-style: italic; color: var(--color-gray-2);
+    font-size: var(--font-size-body); line-height: 1.8;
+}
+
+/* ─── Curiosidades ───────────────────────────────────── */
+
+.curiosity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; max-width: 1000px;
+    width: 100%; padding: 0 20px;
+}
+
+.curiosity-card {
+    background-color: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 16px; padding: 28px 22px;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s, background-color 0.3s;
+    border-bottom: 3px solid var(--color-french-blue);
+}
+
+.curiosity-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-french-red);
+    background-color: rgba(255,255,255,0.07);
+}
+
+.curiosity-icon { font-size: 38px; margin-bottom: 14px; }
+.curiosity-card h3 { font-size: var(--font-size-h4); font-weight: var(--font-weigth-h3); color: var(--color-french-white); margin-bottom: 10px; }
+.curiosity-card p  { font-size: var(--font-size-caption); color: var(--color-gray-3); line-height: 1.7; }
+
+/* ─── Footer ─────────────────────────────────────────── */
+
+footer {
+    background-color: var(--color-black);
+    color: var(--color-french-white);
+    font-family: var(--font-family-primary);
+    padding: 30px;
+    display: flex; justify-content: center; align-items: center;
+}
+
+footer h3 { font-size: var(--font-size-h3); font-weight: var(--font-weigth-h3); }
+
+/* ─── Responsividade ─────────────────────────────────── */
+
+@media (max-width: 900px) {
+    .hamburger { display: flex; }
+
+    .nav-menu {
+        position: fixed; top: 0; left: 0;
+        width: 100%; height: 100vh;
+        background-color: rgba(0,0,0,0.97);
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.4s cubic-bezier(0.77,0,0.175,1);
+        z-index: 150;
+    }
+
+    .nav-menu.open { transform: translateX(0); }
+    .nav-links { flex-direction: column; gap: 32px; align-items: center; }
+    .nav-links a { font-size: var(--font-size-h3); }
+
+    .history-card-content,
+    .history-card-content.reverse { flex-direction: column; }
+
+    .history-ancient img,
+    .history-medieval img,
+    .history-modern img,
+    .history-contemporary img { width: 100%; height: 220px; }
+
+    .curiosity-grid { grid-template-columns: repeat(2, 1fr); }
+    .tab-btn { padding: 14px 24px; font-size: var(--font-size-caption); }
+}
+
+@media (max-width: 560px) {
+    header { padding: 16px 24px; }
+    .section-history { padding: 50px 16px; }
+    .curiosity-grid { grid-template-columns: 1fr; }
+    .history-image-wrap { max-width: 100%; }
+    .tab-btn { padding: 12px 18px; }
+}
